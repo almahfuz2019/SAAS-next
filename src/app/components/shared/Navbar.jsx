@@ -80,10 +80,10 @@ export default function Navbar() {
         <div className="navbar-end flex gap-6">
           <Link href="/login" className="text-xl text-black font-medium">
             Log in
-          </Link> 
+          </Link>
           <Link
             href="/login"
-            className="text-xl text-white bg-primary rounded-[32px] px-[20px] py-[12px] font-medium"
+            className="bg-primary rounded-[32px] font-medium  text-white px-6  py-3 hover:bg-blue-700 transition duration-300 text-lg"
           >
             Request A Demo
           </Link>
