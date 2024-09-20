@@ -1,0 +1,40 @@
+/my-nextjs-project
+│
+├── /app                        # The main `app` folder for Next.js 14
+│   ├── /layout.js              # Global layout file (optional, used for all pages)
+│   ├── /globals.css            # Global CSS for styling
+│
+│   ├── /components             # Global reusable components
+│   │   ├── Navbar.js           # Example: Navbar component
+│   │   ├── Footer.js           # Example: Footer component
+│   │   └── Button.js           # Example: Reusable button component
+│
+│   ├── /features               # Feature-based folder structure
+│   │   ├── /users              # Example feature for users
+│   │   │   ├── /components     # Feature-specific components
+│   │   │   │   └── UserCard.js # Example: User card component for users feature
+│   │   │   └── page.js         # Page for users feature (Next.js route)
+│   │   └── /dashboard          # Example feature for dashboard
+│   │       ├── /components     # Feature-specific components
+│   │       │   └── DashboardHeader.js
+│   │       └── page.js         # Page for dashboard feature (Next.js route)
+│
+│   ├── /hooks                  # Custom hooks (for logic like authentication)
+│   │   └── useAuth.js          # Example: Hook for authentication
+│
+│   ├── /styles                 # Additional styles (CSS/SCSS modules)
+│   │   └── Button.module.css    # Example: Component-specific CSS module
+│
+│   └── /page.js                # Home page (Next.js root page component)
+│
+├── /store                      # Centralized store and RTK Query APIs
+│   ├── /apis                   # RTK Query API slices for each feature
+│   │   ├── usersApi.js         # RTK Query API for users
+│   │   └── dashboardApi.js     # RTK Query API for dashboard
+│   ├── store.js                # Centralized Redux store setup with RTK Query
+│
+├── /public                     # Public static assets like images, fonts
+│   └── favicon.ico
+├── /next.config.js             # Next.js configuration file
+├── package.json                # Project dependencies and scripts
+└── README.md                   # Documentation
