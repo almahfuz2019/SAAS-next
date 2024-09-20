@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import vactor from "../../../../public/images/homePage/heroSection/mainImage.png";
 const HeroSection = () => {
   return (
     <div className="bg-white relative h-[80vh] flex items-center justify-start ">
@@ -35,7 +35,7 @@ const HeroSection = () => {
             <Image
               width={941}
               height={660}
-              src="/images/HomePage/HeroSection/mainImage.png" // Your uploaded image
+              src={vactor} // Your uploaded image
               alt="Condo Cloud Graphic"
               className="object-contain"
             />
