@@ -5,14 +5,14 @@ import vactor from "../../../../public/images/homePage/heroSection/mainImage.png
 
 const HeroSection = () => {
   return (
-    <div className="bg-white relative h-screen lg:h-[90vh] 2xl:h-[80vh] flex items-center justify-start overflow-hidden">
-      <div className="container mx-auto max-w-screen-xl py-16 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center justify-between">
+    <div className="bg-white relative  lg:h-[90vh] 2xl:h-[80vh] flex items-center justify-start overflow-hidden">
+      <div className="container mx-auto max-w-screen-xl  grid grid-cols-1 lg:grid-cols-2 gap-20 items-center justify-between">
         {/* Text Section */}
         <div
           className="flex-1 px-4 text-center md:text-left"
           data-aos="fade-right"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] font-bold lg:leading-[50px] text-accent mb-6 mt-10">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] font-bold lg:leading-[50px] text-accent mb-6 mt-16 lg:mt-6">
             Your <span className="text-primary">Condo</span>, your{" "}
             <span className="text-primary">control</span>
             <br className="hidden md:block" /> and we make it happen
