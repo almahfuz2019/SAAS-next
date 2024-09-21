@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa"; // Importing icons
+import { FaChevronDown } from "react-icons/fa"; // Importing icons
 
 const FaqSection = () => {
   return (

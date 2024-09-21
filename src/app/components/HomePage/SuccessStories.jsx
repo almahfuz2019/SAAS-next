@@ -6,7 +6,7 @@ const SuccessStories = () => {
     <div className="bg-white py-24">
       <div className="container mx-auto max-w-screen-xl px-4">
         {/* Title and Button */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-16">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-10">
           <h2 className="text-[32px] md:text-[40px] leading-[40px] md:leading-[50px] font-semibold text-accent mb-4 md:mb-0">
             Our Success Stories
           </h2>

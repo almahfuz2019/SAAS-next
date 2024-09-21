@@ -1,7 +1,7 @@
 import React from "react";
 const FunFacts = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-between  px-4 bg-white max-w-screen-xl gap-10 mx-auto">
+    <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-between  px-4 bg-white max-w-screen-xl gap-10 mx-auto pt-20 lg:pt-24">
       {/* Stats Section */}
       <div className="grid grid-cols-2 gap-4 lg:gap-8 md:grid-cols-3 items-center justify-center">
         {/* Stat Cards */}

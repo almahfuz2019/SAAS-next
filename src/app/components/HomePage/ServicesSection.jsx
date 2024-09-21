@@ -5,7 +5,7 @@ import "react-tabs/style/react-tabs.css"; // Default styles, can be customized
 
 const ServicesSection = () => {
   return (
-    <section className="bg-gradient-to-r from-[#1A7DC1] to-primary py-20 lg:pt-24 lg:pb-0 relative">
+    <section className="bg-gradient-to-r from-[#1A7DC1] to-primary py-20 lg:pt-24 lg:pb-0 relative overflow-hidden">
       <div className="container mx-auto relative z-20 px-4">
         {/* Tabs Centered at the Top */}
         <div className="flex justify-center">

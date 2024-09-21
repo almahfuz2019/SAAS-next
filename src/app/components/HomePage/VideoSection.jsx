@@ -17,7 +17,7 @@ const VideoSection = () => {
   };
 
   return (
-    <div className="bg-[#F5F8FF] py-24">
+    <div className="bg-[#F5F8FF] lg:py-24 py-20">
       <div className="container mx-auto max-w-screen-xl px-4 grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Left side: Text content */}
         <div

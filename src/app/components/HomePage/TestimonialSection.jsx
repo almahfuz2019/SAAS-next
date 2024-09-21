@@ -8,7 +8,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const NextArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="bg-blue-500 text-white p-2 rounded-full shadow-lg absolute top-1/2 transform -translate-y-1/2 right-0 z-10"
+    className="bg-blue-500 text-white p-2 rounded-full shadow-lg absolute top-1/2 transform -translate-y-1/2 right-4 z-10"
   >
     <FaArrowRight />
   </button>
@@ -17,7 +17,7 @@ const NextArrow = ({ onClick }) => (
 const PrevArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="bg-blue-500 text-white p-2 rounded-full shadow-lg absolute top-1/2 transform -translate-y-1/2 left-0 z-10"
+    className="bg-blue-500 text-white p-2 rounded-full shadow-lg absolute top-1/2 transform -translate-y-1/2 left-4 z-10"
   >
     <FaArrowLeft />
   </button>
@@ -60,7 +60,7 @@ const TestimonialSection = () => {
         <Slider {...settings} className="relative">
           {/* Testimonial 1 */}
           <div className="px-4">
-            <div className="bg-white rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-lg">
               <div className="flex items-center mb-4">
                 <div className="text-yellow-500 flex">
                   {[...Array(5)].map((_, i) => (
@@ -68,10 +68,10 @@ const TestimonialSection = () => {
                   ))}
                 </div>
               </div>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-6">
                 Condo Control is by far the best system for HOA management that
                 I have worked with in my 14 years of managing. Easy to learn,
-                easy to use…..
+                easy to use...
               </p>
               <div className="flex items-center">
                 <Image
@@ -94,7 +94,7 @@ const TestimonialSection = () => {
 
           {/* Testimonial 2 */}
           <div className="px-4">
-            <div className="bg-white rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-lg">
               <div className="flex items-center mb-4">
                 <div className="text-yellow-500 flex">
                   {[...Array(5)].map((_, i) => (
@@ -102,10 +102,10 @@ const TestimonialSection = () => {
                   ))}
                 </div>
               </div>
-              <p className="text-gray-600 mb-4">
-                Condo Control is by far the best system for HOA management that
-                I have worked with in my 14 years of managing. Easy to learn,
-                easy to use…..
+              <p className="text-gray-600 mb-6">
+                Condo Control has transformed our HOA operations. The software
+                is intuitive, easy to navigate, and has drastically improved our
+                workflow...
               </p>
               <div className="flex items-center">
                 <Image
@@ -128,7 +128,7 @@ const TestimonialSection = () => {
 
           {/* Testimonial 3 */}
           <div className="px-4">
-            <div className="bg-white rounded-lg p-6 shadow-md">
+            <div className="bg-white rounded-lg p-6 shadow-lg">
               <div className="flex items-center mb-4">
                 <div className="text-yellow-500 flex">
                   {[...Array(5)].map((_, i) => (
@@ -136,10 +136,10 @@ const TestimonialSection = () => {
                   ))}
                 </div>
               </div>
-              <p className="text-gray-600 mb-4">
-                Condo Control is by far the best system for HOA management that
-                I have worked with in my 14 years of managing. Easy to learn,
-                easy to use…..
+              <p className="text-gray-600 mb-6">
+                We've been using Condo Control for over a year now, and the
+                difference it has made is night and day. The customer support is
+                top-notch!
               </p>
               <div className="flex items-center">
                 <Image

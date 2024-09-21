@@ -11,22 +11,25 @@ import SuccessStories from "./components/HomePage/SuccessStories";
 import PartnerLogos from "./components/HomePage/PartnerLogos";
 import Footer from "./components/shared/Footer";
 import NavbarForSmallDevices from "./components/shared/NavbarForSmallDevices";
+import Testimonial from "./components/HomePage/Testimonial";
+import TestimonialSlider from "./components/HomePage/TestimonialSlider";
 
 export default function page() {
   return (
     <div>
       <Navbar />
-      <NavbarForSmallDevices/>
+      <NavbarForSmallDevices />
       <HeroSection />
       <ServicesSection />
-      <VideoSection/>
-      <PackagesSection/>
-      <FaqSection/>
-      {/* <TestimonialSection/> */}
-      <FunFacts/>
-      <SuccessStories/>
-      <PartnerLogos/>
-      <Footer/>
+      <VideoSection />
+      <PackagesSection />
+      <FaqSection />
+      {/* <Testimonial/> */}
+      <TestimonialSlider />
+      <FunFacts />
+      <SuccessStories />
+      <PartnerLogos />
+      <Footer />
     </div>
   );
 }

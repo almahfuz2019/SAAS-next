@@ -4,24 +4,27 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const PackagesSection = () => {
   return (
-    <div className="lg:py-24 pb-20 bg-primary sm:bg-white">
+    <div className="lg:pt-24 pt-20 lg:pb-6 pb-4  bg-primary sm:bg-white">
       <div className="container mx-auto max-w-screen-xl">
         {" "}
         <div>
           {/* Title Section */}
-          <div
-            className="relative text-white mb-16 lg:mx-4 bg-primary lg:rounded-3xl px-4 lg:px-20 pt-16 pb-40 md:pb-60"
-            data-aos="fade-up"
-          >
-            <h2 className="text-[32px] md:text-[40px] leading-[40px] md:leading-[50px] font-medium z-10 relative">
+          <div className="relative text-white mb-16 lg:mx-4 bg-primary lg:rounded-3xl px-4 lg:px-20 pt-16 pb-40 md:pb-60">
+            <h2
+              data-aos="fade-up"
+              className="text-[32px] md:text-[40px] leading-[40px] md:leading-[50px] font-medium z-10 relative"
+            >
               Choose your <span className="text-[#FFB400]">Package</span> Which{" "}
               <br className="md:block hidden" /> is perfect for your Condo
             </h2>
-            <p className="text-lg md:text-xl mt-4 font-normal z-10 relative">
+            <p
+              data-aos="fade-up"
+              className="text-lg md:text-xl mt-4 font-normal z-10 relative"
+            >
               From a few listings to many, Condo Cloud adapts to the scale and
-              complexity of your operations. <br /> Condo Cloud has affordable
-              packages to fit your community’s management and communication
-              needs.
+              complexity of your operations. <br className="hidden lg:block" />{" "}
+              Condo Cloud has affordable packages to fit your community’s
+              management and communication needs.
             </p>
             <div className="absolute right-0 top-0 ">
               <Image

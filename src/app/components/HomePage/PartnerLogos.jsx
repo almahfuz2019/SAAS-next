@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const PartnerLogos = () => {
   return (
-    <div className="bg-white pb-24 pt-10">
+    <div className="bg-white pb-20 lg:pb-24 ">
       <div className="container flex flex-col lg:flex-row gap-2 lg:gap-20 justify-between max-w-screen-xl mx-auto px-4">
         {/* Title */}
         <h2 className="text-[32px] md:text-[40px] text-accent font-medium mb-10 text-center lg:text-left">
