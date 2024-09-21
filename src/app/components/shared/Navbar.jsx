@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 export default function Navbar() {
-  const navItemsStyle = `relative font-normal before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-primary before:transition hover:before:scale-100 text-accent hover:text-primary text-xl`;
+  const navItemsStyle = `relative font-normal before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0  before:transition hover:before:scale-100 text-[#676767]  hover:text-primary text-xl`;
   const navItems = (
     <>
       <li className={navItemsStyle}>
@@ -83,7 +83,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/login"
-            className="bg-primary rounded-[32px] font-medium  text-white px-6  py-3 hover:bg-blue-700 transition duration-300 text-lg"
+            className="bg-primary rounded-[32px] font-medium  text-white px-6  py-3 hover:bg-[#3B43B2] transition duration-300 text-lg"
           >
             Request A Demo
           </Link>

@@ -2,26 +2,29 @@
 import { useState } from "react";
 import Image from "next/image";
 import ReactPlayer from "react-player";
-import { CiPlay1 } from "react-icons/ci";
 
 const VideoSection = () => {
-  // State to manage if the video is playing or not
   const [isPlaying, setIsPlaying] = useState(false);
+  const [videoError, setVideoError] = useState(false); // State to handle video loading errors
 
-  // Function to handle click on the play button
   const handlePlayClick = () => {
-    setIsPlaying(true); // Show the video when play is clicked
+    setIsPlaying(true);
+    setVideoError(false); // Reset error on new play click
+  };
+
+  const handleVideoError = () => {
+    setVideoError(true); // Set error if video fails to load
   };
 
   return (
-    <div className="bg-[#F5F8FF] py-24 ">
-      <div className="container mx-auto max-w-screen-xl px-4 flex flex-col md:flex-row items-center justify-between gap-10">
+    <div className="bg-[#F5F8FF] py-24">
+      <div className="container mx-auto max-w-screen-xl px-4 flex flex-col lg:flex-row items-center justify-between gap-10">
         {/* Left side: Text content */}
         <div className="flex-1 text-left mb-10 md:mb-0">
-          <h2 className="font-medium mb-10 text-accent text-[40px] leading-[50px]  ">
+          <h2 className="font-medium mb-6 md:mb-10 text-accent text-[32px] md:text-[40px] leading-[40px] md:leading-[50px]">
             A Comprehensive Support System For Every User
           </h2>
-          <p className="text-[#676767] text-xl mb-6">
+          <p className="text-[#676767] text-lg md:text-xl mb-6">
             Reputable industry leaders and advisors recognize Condo Control for
             our outstanding solutions and exceptional customer support. Our team
             is always happy to answer questions or make tailored recommendations
@@ -31,7 +34,7 @@ const VideoSection = () => {
           </p>
           <a
             href="#"
-            className="text-[#1B8DD3] text-xl font-  underline underline-offset-4"
+            className="text-[#1B8DD3] text-lg md:text-xl font-semibold underline underline-offset-4"
           >
             Learn More
           </a>
@@ -39,7 +42,6 @@ const VideoSection = () => {
 
         {/* Right side: Video or banner with play button */}
         <div className="flex-1">
-          {/* If the video is playing, show the ReactPlayer */}
           {isPlaying ? (
             <div className="relative w-full h-auto aspect-video">
               <ReactPlayer
@@ -49,10 +51,17 @@ const VideoSection = () => {
                 width="100%"
                 height="100%"
                 className="rounded-lg"
+                onError={handleVideoError} // Handle video errors
               />
+              {/* Fallback text for video errors */}
+              {videoError && (
+                <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-white text-center">
+                  <p>Sorry, the video could not be loaded. Please try again later.</p>
+                </div>
+              )}
             </div>
           ) : (
-            // Otherwise, show the play button over the placeholder banner
+            // Show a placeholder image with a play button
             <div
               className="relative cursor-pointer w-full h-auto aspect-video rounded-lg overflow-hidden"
               onClick={handlePlayClick}
@@ -69,7 +78,7 @@ const VideoSection = () => {
                   height={64}
                   width={64}
                   src="/images/homePage/supportSection/playIcon.png"
-                  className="hover:scale-110"
+                  className="hover:scale-110 transition-transform duration-300"
                   alt="play Icon"
                 />
               </div>

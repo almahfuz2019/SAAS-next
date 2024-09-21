@@ -5,60 +5,62 @@ import "react-tabs/style/react-tabs.css"; // Default styles, can be customized
 
 const ServicesSection = () => {
   return (
-    <div className="bg-gradient-to-r from-[#1A7DC1] to-primary pt-24 relative">
-      <div className="container max-w-screen-xl mx-auto relative z-20  px-4">
+    <section className="bg-gradient-to-r from-[#1A7DC1] to-primary py-20 lg:pt-24 relative">
+      <div className="container mx-auto relative z-20 px-4">
         {/* Tabs Centered at the Top */}
-        <div className="flex justify-center  ">
+        <div className="flex justify-center ">
           <Tabs>
-            <TabList className="flex justify-between mb-16 space-x-4 text-lg font-semibold bg-[#333A9A] rounded-[80px] px-4 py-3   mx-auto">
+            <TabList className="grid grid-cols-2  lg:gap-0 lg:grid-cols-4 max-w-screen-xl 2xl:mx-auto lg:mx-12 justify-between mb-16 space-y-2 sm:space-y-0 sm:space-x-2 lg:space-x-4 text-base lg:text-lg font-semibold bg-[#333A9A] rounded-2xl lg:rounded-[40px] px-2 py-6 lg:px-4  lg:py-3">
               <Tab
-                className="cursor-pointer px-4 py-2  hover:bg-[#3B43B2] rounded-[60px]   text-2xl  text-white font-normal"
+                className="cursor-pointer px-3 lg:px-4 py-2 hover:bg-[#3B43B2] rounded-[20px] lg:rounded-[60px] text-sm sm:text-lg lg:text-xl text-white font-normal text-center flex items-center justify-center"
                 selectedClassName="bg-[#3B43B2] font-medium"
               >
                 Property Management
               </Tab>
               <Tab
-                className="cursor-pointer px-4 py-2  hover:bg-[#3B43B2] rounded-[60px]   text-2xl  text-white font-normal"
+                className="cursor-pointer px-3 lg:px-4 py-2 hover:bg-[#3B43B2] rounded-[20px] lg:rounded-[60px] text-sm sm:text-lg lg:text-xl text-white font-normal text-center flex items-center justify-center"
                 selectedClassName="bg-[#3B43B2] font-medium"
               >
                 Store Data
               </Tab>
               <Tab
-                className="cursor-pointer px-4 py-2  hover:bg-[#3B43B2] rounded-[60px]  text-2xl  text-white font-normal"
+                className="cursor-pointer px-3 lg:px-4 py-2 hover:bg-[#3B43B2] rounded-[20px] lg:rounded-[60px] text-sm sm:text-lg lg:text-xl text-white font-normal text-center flex items-center justify-center"
                 selectedClassName="bg-[#3B43B2] font-medium"
               >
-                Seamless Communication
+                <span className="hidden ">Seamless</span> Communication
               </Tab>
               <Tab
-                className="cursor-pointer px-4 py-2  hover:bg-[#3B43B2] rounded-[60px]   text-2xl  text-white font-normal"
+                className="cursor-pointer px-3 lg:px-4 py-2 hover:bg-[#3B43B2] rounded-[20px] lg:rounded-[60px] text-sm sm:text-lg lg:text-xl text-white font-normal text-center flex items-center justify-center"
                 selectedClassName="bg-[#3B43B2] font-medium"
               >
                 Control Security
               </Tab>
             </TabList>
-
             {/* Tab Panels */}
             <TabPanel>
-              <div className="flex flex-col gap-16 md:flex-row items-start justify-between">
+              <div className="flex flex-col md:gap-16 gap-10  lg:gap-16 md:flex-col xl:flex-row items-start justify-between max-w-screen-2xl mx-auto">
                 {/* Left Side Image */}
-                <div className="flex-1 mb-10 md:mb-0">
-                  <div className="relative w-full h-full">
+                <div className="flex-1  ">
+                  <div className="relative w-full ">
                     <Image
-                      src="/images/homePage/servicesSection/main.png" // Ensure this image path is correct
-                      alt="Dashboard Graphic"
+                      src="/images/homePage/servicesSection/main.png" // Correct image path
+                      alt="Property Management"
+                      // layout="responsive"
                       width={800}
                       height={532}
-                      className="object-contain"
+                      objectFit="contain"
+                      priority
+                      className="rounded-lg "
                     />
                   </div>
                 </div>
 
                 {/* Right Side Content */}
-                <div className="flex-1 text-white md:pl-8">
-                  <h2 className="text-[40px] leading-[50px] font-medium  mb-6">
+                <div className="flex-1 text-white lg:pl-8">
+                  <h2 className="text-3xl sm:text-4xl lg:text-[40px] leading-tight font-medium mb-6">
                     See the small details and the big picture
                   </h2>
-                  <p className="text-lg leading-relaxed text-[#E6E6E6]">
+                  <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-[#E6E6E6]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -67,89 +69,98 @@ const ServicesSection = () => {
                 </div>
               </div>
             </TabPanel>
-
             <TabPanel>
-              <div className="flex flex-col md:flex-row items-start justify-between">
+              <div className="flex flex-col md:gap-16 gap-10  lg:gap-16 md:flex-col xl:flex-row items-start justify-between max-w-screen-2xl mx-auto">
                 {/* Left Side Image */}
-                <div className="flex-1 mb-10 md:mb-0">
-                  <div className="relative w-full h-full">
+                <div className="flex-1  ">
+                  <div className="relative w-full ">
                     <Image
-                      src="/images/homePage/servicesSection/main.png" // Ensure this image path is correct
-                      alt="Dashboard Graphic"
+                      src="/images/homePage/servicesSection/main.png" // Correct image path
+                      alt="Property Management"
+                      // layout="responsive"
                       width={800}
                       height={532}
-                      className="object-contain"
+                      objectFit="contain"
+                      priority
+                      className="rounded-lg "
                     />
                   </div>
                 </div>
 
                 {/* Right Side Content */}
-                <div className="flex-1 text-white md:pl-8">
-                  <h2 className="text-[40px] leading-[50px] font-medium  mb-6">
-                    Store Your Data Safely
+                <div className="flex-1 text-white lg:pl-8">
+                  <h2 className="text-3xl sm:text-4xl lg:text-[40px] leading-tight font-medium mb-6">
+                    See the small details and the big picture
                   </h2>
-                  <p className="text-lg leading-relaxed text-[#E6E6E6]">
-                    Store all your data securely in the cloud with easy access
-                    and safe retrieval. Our solutions guarantee security and
-                    availability for your team anytime, anywhere.
+                  <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-[#E6E6E6]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   </p>
                 </div>
               </div>
             </TabPanel>
-
             <TabPanel>
-              <div className="flex flex-col md:flex-row items-start justify-between">
+              <div className="flex flex-col md:gap-16 gap-10  lg:gap-16 md:flex-col xl:flex-row items-start justify-between max-w-screen-2xl mx-auto">
                 {/* Left Side Image */}
-                <div className="flex-1 mb-10 md:mb-0">
-                  <div className="relative w-full h-full">
+                <div className="flex-1  ">
+                  <div className="relative w-full ">
                     <Image
-                      src="/images/homePage/servicesSection/main.png" // Ensure this image path is correct
-                      alt="Dashboard Graphic"
+                      src="/images/homePage/servicesSection/main.png" // Correct image path
+                      alt="Property Management"
+                      // layout="responsive"
                       width={800}
                       height={532}
-                      className="object-contain"
+                      objectFit="contain"
+                      priority
+                      className="rounded-lg "
                     />
                   </div>
                 </div>
 
                 {/* Right Side Content */}
-                <div className="flex-1 text-white md:pl-8">
-                  <h2 className="text-[40px] leading-[50px] font-medium  mb-6">
-                    Communicate Seamlessly
+                <div className="flex-1 text-white lg:pl-8">
+                  <h2 className="text-3xl sm:text-4xl lg:text-[40px] leading-tight font-medium mb-6">
+                    See the small details and the big picture
                   </h2>
-                  <p className="text-lg leading-relaxed text-[#E6E6E6]">
-                    Seamless communication channels integrated into the platform
-                    for effective collaboration among team members, property
-                    managers, and residents.
+                  <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-[#E6E6E6]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   </p>
                 </div>
               </div>
             </TabPanel>
-
             <TabPanel>
-              <div className="flex flex-col md:flex-row items-start justify-between">
+              <div className="flex flex-col md:gap-16 gap-10  lg:gap-16 md:flex-col xl:flex-row items-start justify-between max-w-screen-2xl mx-auto">
                 {/* Left Side Image */}
-                <div className="flex-1 mb-10 md:mb-0">
-                  <div className="relative w-full h-full">
+                <div className="flex-1  ">
+                  <div className="relative w-full ">
                     <Image
-                      src="/images/homePage/servicesSection/main.png" // Ensure this image path is correct
-                      alt="Dashboard Graphic"
+                      src="/images/homePage/servicesSection/main.png" // Correct image path
+                      alt="Property Management"
+                      // layout="responsive"
                       width={800}
                       height={532}
-                      className="object-contain"
+                      objectFit="contain"
+                      priority
+                      className="rounded-lg "
                     />
                   </div>
                 </div>
 
                 {/* Right Side Content */}
-                <div className="flex-1 text-white md:pl-8">
-                  <h2 className="text-[40px] leading-[50px] font-medium  mb-6">
-                    Ensure Control and Security
+                <div className="flex-1 text-white lg:pl-8">
+                  <h2 className="text-3xl sm:text-4xl lg:text-[40px] leading-tight font-medium mb-6">
+                    See the small details and the big picture
                   </h2>
-                  <p className="text-lg leading-relaxed text-[#E6E6E6]">
-                    Control and monitor the security of your property and data
-                    with cutting-edge security features built into the platform
-                    for 24/7 monitoring.
+                  <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-[#E6E6E6]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   </p>
                 </div>
               </div>
@@ -157,16 +168,18 @@ const ServicesSection = () => {
           </Tabs>
         </div>
       </div>
-      <div className="absolute left-0 top-0 ">
+
+      {/* Decorative Image Element */}
+      <div className="absolute left-0 top-0">
         <Image
           width={568}
           height={447}
-          src="/images/homePage/servicesSection/ring.png" // Your uploaded image
-          alt="Condo Cloud Graphic"
-          className="w-80 animate-pulse "
+          src="/images/homePage/servicesSection/ring.png" // Correct image path
+          alt="Decorative Ring"
+          className="w-96 animate-pulse"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
