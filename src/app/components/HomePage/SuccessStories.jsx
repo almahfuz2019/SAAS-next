@@ -19,9 +19,9 @@ const SuccessStories = () => {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Story 1 */}
-          <div className="bg-[#F5F8FF] rounded-2xl p-5">
+          <div className="bg-[#F5F8FF] rounded-2xl p-5" data-aos="fade-up">
             <div className="relative w-full h-56">
               <Image
                 src="https://images.pexels.com/photos/374023/pexels-photo-374023.jpeg"
@@ -51,7 +51,11 @@ const SuccessStories = () => {
           </div>
 
           {/* Story 2 */}
-          <div className="bg-[#F5F8FF] rounded-2xl p-5">
+          <div
+            className="bg-[#F5F8FF] rounded-2xl p-5"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div className="relative w-full h-56">
               <Image
                 src="https://images.pexels.com/photos/374023/pexels-photo-374023.jpeg"
@@ -81,7 +85,11 @@ const SuccessStories = () => {
           </div>
 
           {/* Story 3 */}
-          <div className="bg-[#F5F8FF] rounded-2xl p-5">
+          <div
+            className="bg-[#F5F8FF] rounded-2xl p-5"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <div className="relative w-full h-56">
               <Image
                 src="https://images.pexels.com/photos/374023/pexels-photo-374023.jpeg"

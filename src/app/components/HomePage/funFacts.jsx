@@ -1,47 +1,35 @@
 import React from "react";
-
 const FunFacts = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between py-12 px-4 bg-white max-w-screen-xl gap-10 mx-auto">
+    <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-between py-12 px-4 bg-white max-w-screen-xl gap-10 mx-auto">
       {/* Stats Section */}
-      <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
-        {/* Stat Card 1 */}
-        <div
-          className="bg-primary w-48 text-white rounded-2xl px-6 py-8 relative"
-          style={{
-            clipPath: "polygon(0 0, 100% 10%, 100% 100%, 0% 100%)",
-          }}
-        >
-          <h2 className="text-7xl font-semibold text-[#FFB400]">4.5</h2>
-          <p className="mt-2 text-2xl text-left">Customer Ratings</p>
-        </div>
-
-        {/* Stat Card 2 */}
-        <div
-          className="bg-primary w-48 text-white rounded-2xl px-6 py-8 relative"
-          style={{
-            clipPath: "polygon(0 0, 100% 10%, 100% 100%, 0% 100%)",
-          }}
-        >
-          <h2 className="text-7xl font-semibold text-[#FFB400]">30+</h2>
-          <p className="mt-2 text-2xl text-left">Legal Properties</p>
-        </div>
-
-        {/* Stat Card 3 */}
-        <div
-          className="bg-primary w-48 text-white rounded-2xl px-6 py-8 relative"
-          style={{
-            clipPath: "polygon(0 0, 100% 10%, 100% 100%, 0% 100%)",
-          }}
-        >
-          <h2 className="text-7xl font-semibold text-[#FFB400]">10+</h2>
-          <p className="mt-2 text-2xl text-left">Working Professionals</p>
-        </div>
+      <div className="grid grid-cols-2 gap-4 lg:gap-8 md:grid-cols-3 items-center justify-center">
+        {/* Stat Cards */}
+        {[
+          { value: "4.5", label: "Customer Ratings" },
+          { value: "30+", label: "Legal Properties" },
+          { value: "10+", label: "Working Professionals" },
+        ].map((stat, index) => (
+          <div
+            key={index}
+            className="bg-primary md:w-48 text-white rounded-2xl px-6 py-8 relative"
+            style={{
+              clipPath: "polygon(0 0, 100% 10%, 100% 100%, 0% 100%)",
+            }}
+            data-aos="fade-up"
+            data-aos-delay={`${index * 100}`} // Stagger the animations
+          >
+            <h2 className="text-6xl md:text-7xl font-semibold text-[#FFB400]">
+              {stat.value}
+            </h2>
+            <p className="mt-2 text-2xl text-left">{stat.label}</p>
+          </div>
+        ))}
       </div>
 
       {/* Text Section */}
-      <div className="mt-8 md:mt-0 md:ml-8 text-center md:text-left">
-        <h3 className="text-[32px] md:text-[40px] leading-[40px] md:leading-[50px] font-semibold text-accent">
+      <div className="mt-8 md:mt-0 md:ml-8" data-aos="fade-up">
+        <h3 className="text-[32px] md:text-[40px] leading-tight font-semibold text-accent">
           Best choice for property management and services
         </h3>
         <p className="mt-4 text-lg md:text-xl text-[#676767]">

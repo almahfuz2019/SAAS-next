@@ -10,11 +10,13 @@ import FunFacts from "./components/HomePage/funFacts";
 import SuccessStories from "./components/HomePage/SuccessStories";
 import PartnerLogos from "./components/HomePage/PartnerLogos";
 import Footer from "./components/shared/Footer";
+import NavbarForSmallDevices from "./components/shared/NavbarForSmallDevices";
 
 export default function page() {
   return (
     <div>
       <Navbar />
+      <NavbarForSmallDevices/>
       <HeroSection />
       <ServicesSection />
       <VideoSection/>

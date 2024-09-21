@@ -1,27 +1,34 @@
-"use client";
+"use client"; // Ensure this component runs on the client side
 import { useState } from "react";
 import Image from "next/image";
 import ReactPlayer from "react-player";
 
+
 const VideoSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [videoError, setVideoError] = useState(false); // State to handle video loading errors
+  const [videoError, setVideoError] = useState(false);
 
   const handlePlayClick = () => {
     setIsPlaying(true);
-    setVideoError(false); // Reset error on new play click
+    setVideoError(false);
   };
 
   const handleVideoError = () => {
-    setVideoError(true); // Set error if video fails to load
+    setVideoError(true);
   };
+
+
 
   return (
     <div className="bg-[#F5F8FF] py-24">
       <div className="container mx-auto max-w-screen-xl px-4 flex flex-col lg:flex-row items-center justify-between gap-10">
         {/* Left side: Text content */}
-        <div className="flex-1 text-left mb-10 md:mb-0">
-          <h2 className="font-medium mb-6 md:mb-10 text-accent text-[32px] md:text-[40px] leading-[40px] md:leading-[50px]">
+        <div
+          className="flex-1 text-left mb-10 md:mb-0"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <h2 className="font-medium mb-6 md:mb-10 text-accent text-[32px] md:text-[40px] leading-[40px] md:leading-[50px] transition-transform duration-300 hover:scale-105">
             A Comprehensive Support System For Every User
           </h2>
           <p className="text-[#676767] text-lg md:text-xl mb-6">
@@ -41,27 +48,28 @@ const VideoSection = () => {
         </div>
 
         {/* Right side: Video or banner with play button */}
-        <div className="flex-1">
+        <div className="flex-1" data-aos="fade-up" data-aos-delay="200">
           {isPlaying ? (
             <div className="relative w-full h-auto aspect-video">
               <ReactPlayer
-                url="/videos/support_system.mp4"
+                url="/videos/support_system.mp4" // Ensure this is a publicly accessible URL
                 controls
                 playing
                 width="100%"
                 height="100%"
                 className="rounded-lg"
-                onError={handleVideoError} // Handle video errors
+                onError={handleVideoError}
               />
-              {/* Fallback text for video errors */}
               {videoError && (
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-white text-center">
-                  <p>Sorry, the video could not be loaded. Please try again later.</p>
+                  <p>
+                    Sorry, the video could not be loaded. Please try again
+                    later.
+                  </p>
                 </div>
               )}
             </div>
           ) : (
-            // Show a placeholder image with a play button
             <div
               className="relative cursor-pointer w-full h-auto aspect-video rounded-lg overflow-hidden"
               onClick={handlePlayClick}
@@ -72,14 +80,13 @@ const VideoSection = () => {
                 fill
                 className="object-cover"
               />
-              {/* Play button overlay */}
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
                 <Image
                   height={64}
                   width={64}
                   src="/images/homePage/supportSection/playIcon.png"
                   className="hover:scale-110 transition-transform duration-300"
-                  alt="play Icon"
+                  alt="Play Icon"
                 />
               </div>
             </div>

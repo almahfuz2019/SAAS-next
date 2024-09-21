@@ -1,12 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa"; // Importing icons
 
 const FaqSection = () => {
   return (
-    <div className="py-24">
+    <div className="py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto max-w-screen-xl px-4 flex flex-col lg:flex-row items-start justify-between gap-10">
         {/* Left side: FAQ title and image */}
-        <div className="flex-1">
+        <div className="flex-1" data-aos="fade-up">
           <h2 className="text-[32px] md:text-[40px] text-accent leading-[40px] md:leading-[50px] font-medium mb-4">
             Frequently Asked <br /> Questions
           </h2>
@@ -18,22 +19,25 @@ const FaqSection = () => {
           </p>
 
           {/* Example Image */}
-          <div className="relative w-full h-auto">
+          <div className="relative w-full h-auto mt-16 lg:mt-0">
             <Image
               src="/images/homePage/FAQSection/vactor.png"
               alt="FAQ Image"
               width={651}
               height={515}
-              className="rounded-lg object-contain"
+              className=" object-contain "
             />
           </div>
         </div>
 
         {/* Right side: FAQ Accordion */}
-        <div className="flex-1">
+        <div className="flex-1" data-aos="fade-up">
           <div className="join gap-4 join-vertical w-full">
             {/* FAQ Item 1 */}
-            <div className="collapse collapse-arrow join-item border-base-300 border">
+            <div
+              className="collapse collapse-arrow join-item border-base-300 border rounded-lg hover:shadow-md transition-shadow duration-300"
+              data-aos="fade-up"
+            >
               <input
                 type="radio"
                 name="my-accordion-4"
@@ -42,9 +46,10 @@ const FaqSection = () => {
               />
               <label
                 htmlFor="faq1"
-                className="collapse-title text-xl text-accent font-medium cursor-pointer"
+                className="collapse-title text-xl text-accent font-medium cursor-pointer flex justify-between items-center"
               >
-                What is Condo Cloud ?
+                What is Condo Cloud?
+                <FaChevronDown className="transition-transform duration-300" />
               </label>
               <div className="collapse-content text-[#676767] border-t pt-4 text-lg md:text-xl">
                 <p>
@@ -58,13 +63,18 @@ const FaqSection = () => {
             </div>
 
             {/* FAQ Item 2 */}
-            <div className="collapse collapse-arrow join-item border-base-300 border">
+            <div
+              className="collapse collapse-arrow join-item border-base-300 border rounded-lg hover:shadow-md transition-shadow duration-300"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <input type="radio" name="my-accordion-4" id="faq2" />
               <label
                 htmlFor="faq2"
-                className="collapse-title text-xl text-accent font-medium cursor-pointer"
+                className="collapse-title text-xl text-accent font-medium cursor-pointer flex justify-between items-center"
               >
                 Lorem ipsum dolor sit amet, consectetur?
+                <FaChevronDown className="transition-transform duration-300" />
               </label>
               <div className="collapse-content text-[#676767] border-t pt-4 text-lg md:text-xl">
                 <p>
@@ -77,13 +87,18 @@ const FaqSection = () => {
             </div>
 
             {/* FAQ Item 3 */}
-            <div className="collapse collapse-arrow join-item border-base-300 border">
+            <div
+              className="collapse collapse-arrow join-item border-base-300 border rounded-lg hover:shadow-md transition-shadow duration-300"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <input type="radio" name="my-accordion-4" id="faq3" />
               <label
                 htmlFor="faq3"
-                className="collapse-title text-xl text-accent font-medium cursor-pointer"
+                className="collapse-title text-xl text-accent font-medium cursor-pointer flex justify-between items-center"
               >
                 Lorem ipsum dolor sit amet, consectetur?
+                <FaChevronDown className="transition-transform duration-300" />
               </label>
               <div className="collapse-content text-[#676767] border-t pt-4 text-lg md:text-xl">
                 <p>
@@ -96,13 +111,18 @@ const FaqSection = () => {
             </div>
 
             {/* FAQ Item 4 */}
-            <div className="collapse collapse-arrow join-item border-base-300 border">
+            <div
+              className="collapse collapse-arrow join-item border-base-300 border rounded-lg hover:shadow-md transition-shadow duration-300"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <input type="radio" name="my-accordion-4" id="faq4" />
               <label
                 htmlFor="faq4"
-                className="collapse-title text-xl text-accent font-medium cursor-pointer"
+                className="collapse-title text-xl text-accent font-medium cursor-pointer flex justify-between items-center"
               >
                 Lorem ipsum dolor sit amet, consectetur?
+                <FaChevronDown className="transition-transform duration-300" />
               </label>
               <div className="collapse-content text-[#676767] border-t pt-4 text-lg md:text-xl">
                 <p>
