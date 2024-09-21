@@ -45,7 +45,7 @@ const HeroSection = () => {
               height={660}
               src={vactor} // Your uploaded image
               alt="Condo Cloud Graphic"
-              className="object-contain transition-transform duration-500 hover:scale-105" // Add hover effect
+              className="object-contain " // Add hover effect
             />
           </div>
         </div>

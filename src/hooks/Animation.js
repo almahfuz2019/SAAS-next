@@ -7,7 +7,7 @@ export default function Animation() {
   useEffect(() => {
     console.log("Client-side AOS init");
     if (typeof window !== "undefined") {
-      AOS.init({ duration: 1000, once: true });
+      AOS.init({ duration: 1000});
     } else {
       console.error("Window is undefined. Running on the server.");
     }

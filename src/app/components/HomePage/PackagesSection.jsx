@@ -4,8 +4,9 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const PackagesSection = () => {
   return (
-    <div className="lg:py-24 py-20 bg-primary sm:bg-white">
+    <div className="lg:py-24 pb-20 bg-primary sm:bg-white">
       <div className="container mx-auto max-w-screen-xl">
+        {" "}
         <div>
           {/* Title Section */}
           <div
@@ -22,13 +23,13 @@ const PackagesSection = () => {
               packages to fit your community’s management and communication
               needs.
             </p>
-            <div className="absolute right-0 top-0 hidden md:block">
+            <div className="absolute right-0 top-0 ">
               <Image
                 src="/images/homePage/Packagers/ring.png" // Ensure this image path is correct
                 alt="Dashboard Graphic"
                 width={600}
                 height={600}
-                className="w-72 lg:w-96 animate-pulse"
+                className="w-72  lg:w-96 animate-pulse"
               />
             </div>
           </div>

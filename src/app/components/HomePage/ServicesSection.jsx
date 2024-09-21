@@ -1,19 +1,11 @@
 "use client"; // Ensure this component runs on the client side
-import { useEffect } from "react";
 import Image from "next/image";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css"; // Default styles, can be customized
-import AOS from "aos"; // Import AOS for animations
-import "aos/dist/aos.css"; // Import AOS styles
 
 const ServicesSection = () => {
-  // Initialize AOS
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
-
   return (
-    <section className="bg-gradient-to-r from-[#1A7DC1] to-primary py-20 lg:pt-24 relative">
+    <section className="bg-gradient-to-r from-[#1A7DC1] to-primary py-20 lg:pt-24 lg:pb-0 relative">
       <div className="container mx-auto relative z-20 px-4">
         {/* Tabs Centered at the Top */}
         <div className="flex justify-center">
@@ -58,7 +50,7 @@ const ServicesSection = () => {
                       height={532}
                       objectFit="contain"
                       priority
-                      className="rounded-lg"
+                      className="rounded-t-lg"
                     />
                   </div>
                 </div>
@@ -93,7 +85,7 @@ const ServicesSection = () => {
                       height={532}
                       objectFit="contain"
                       priority
-                      className="rounded-lg"
+                      className="rounded-t-lg"
                     />
                   </div>
                 </div>
@@ -126,7 +118,7 @@ const ServicesSection = () => {
                       height={532}
                       objectFit="contain"
                       priority
-                      className="rounded-lg"
+                      className="rounded-t-lg"
                     />
                   </div>
                 </div>
@@ -159,7 +151,7 @@ const ServicesSection = () => {
                       height={532}
                       objectFit="contain"
                       priority
-                      className="rounded-lg"
+                      className="rounded-t-lg"
                     />
                   </div>
                 </div>

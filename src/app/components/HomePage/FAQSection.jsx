@@ -4,7 +4,7 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa"; // Importing icons
 
 const FaqSection = () => {
   return (
-    <div className="py-24 bg-gradient-to-b from-white to-gray-50">
+    <div className="lg:py-24 py-20 bg-gradient-to-b ">
       <div className="container mx-auto max-w-screen-xl px-4 flex flex-col lg:flex-row items-start justify-between gap-10">
         {/* Left side: FAQ title and image */}
         <div className="flex-1" data-aos="fade-up">
