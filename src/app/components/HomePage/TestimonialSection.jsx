@@ -52,12 +52,12 @@ const TestimonialSection = () => {
     <div className="bg-gray-50 py-16">
       <div className="container mx-auto max-w-screen-xl px-4">
         {/* Title */}
-        <h2 className="text-center text-3xl font-bold mb-10">
+        <h2 data-aos="fade-up" className="text-center text-3xl font-bold mb-10">
           Reliable Software Inspired By Real Feedback
         </h2>
 
         {/* Slider */}
-        <Slider {...settings} className="relative">
+        <Slider data-aos="fade-up" {...settings} className="relative">
           {/* Testimonial 1 */}
           <div className="px-4">
             <div className="bg-white rounded-lg p-6 shadow-lg">

@@ -81,7 +81,7 @@ const TestimonialSlider = () => {
 
   return (
     <div className="bg-[#F5F8FF] py-20 lg:py-24 px-4">
-      <div className="w-full max-w-screen-2xl mx-auto ">
+      <div data-aos="fade-up" className="w-full max-w-screen-2xl mx-auto ">
         <h1 className="text-[32px] md:text-[40px] text-accent leading-[40px] md:leading-[50px] font-medium mb-16 lg:text-center">
           Reliable Software Inspired By Real Feedback
         </h1>
