@@ -4,7 +4,7 @@ import { FaChevronDown } from "react-icons/fa"; // Importing icons
 
 const FaqSection = () => {
   return (
-    <div className="lg:py-24 py-20 bg-gradient-to-b ">
+    <div className="lg:pt-24 pt-20 bg-gradient-to-b ">
       <div className="container mx-auto max-w-screen-xl px-4 flex flex-col lg:flex-row items-start justify-between gap-10">
         {/* Left side: FAQ title and image */}
         <div className="flex-1" data-aos="fade-up">
@@ -12,7 +12,8 @@ const FaqSection = () => {
             Frequently Asked <br /> Questions
           </h2>
           <p className="text-[#676767] text-lg md:text-xl mb-6">
-            Still have any questions? Contact our Team via{" "}
+            Still have any questions? Contact our Team{" "}
+            <br className="hidden lg:block" /> via{" "}
             <a href="#" className="text-[#1B8DD3]">
               Loremipsum.com
             </a>
@@ -49,7 +50,6 @@ const FaqSection = () => {
                 className="collapse-title text-xl text-accent font-medium cursor-pointer flex justify-between items-center"
               >
                 What is Condo Cloud?
-              
               </label>
               <div className="collapse-content text-[#676767] border-t pt-4 text-lg md:text-xl">
                 <p>
@@ -74,7 +74,6 @@ const FaqSection = () => {
                 className="collapse-title text-xl text-accent font-medium cursor-pointer flex justify-between items-center"
               >
                 Lorem ipsum dolor sit amet, consectetur?
-              
               </label>
               <div className="collapse-content text-[#676767] border-t pt-4 text-lg md:text-xl">
                 <p>
@@ -98,7 +97,6 @@ const FaqSection = () => {
                 className="collapse-title text-xl text-accent font-medium cursor-pointer flex justify-between items-center"
               >
                 Lorem ipsum dolor sit amet, consectetur?
-              
               </label>
               <div className="collapse-content text-[#676767] border-t pt-4 text-lg md:text-xl">
                 <p>
@@ -122,7 +120,6 @@ const FaqSection = () => {
                 className="collapse-title text-xl text-accent font-medium cursor-pointer flex justify-between items-center"
               >
                 Lorem ipsum dolor sit amet, consectetur?
-              
               </label>
               <div className="collapse-content text-[#676767] border-t pt-4 text-lg md:text-xl">
                 <p>

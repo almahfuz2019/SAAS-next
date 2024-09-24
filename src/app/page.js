@@ -5,7 +5,6 @@ import ServicesSection from "./components/HomePage/ServicesSection";
 import VideoSection from "./components/HomePage/VideoSection";
 import PackagesSection from "./components/HomePage/PackagesSection";
 import FaqSection from "./components/HomePage/FAQSection";
-import TestimonialSection from "./components/HomePage/TestimonialSection";
 import FunFacts from "./components/HomePage/funFacts";
 import SuccessStories from "./components/HomePage/SuccessStories";
 import PartnerLogos from "./components/HomePage/PartnerLogos";
@@ -13,6 +12,7 @@ import Footer from "./components/shared/Footer";
 import NavbarForSmallDevices from "./components/shared/NavbarForSmallDevices";
 import Testimonial from "./components/HomePage/Testimonial";
 import TestimonialSlider from "./components/HomePage/TestimonialSlider";
+import ContactSection from "./components/HomePage/ContactSection";
 
 export default function page() {
   return (
@@ -24,11 +24,12 @@ export default function page() {
       <VideoSection />
       <PackagesSection />
       <FaqSection />
-      {/* <Testimonial/> */}
+
       <TestimonialSlider />
       <FunFacts />
       <SuccessStories />
-      <PartnerLogos />
+      {/* <PartnerLogos /> */}
+      <ContactSection/>
       <Footer />
     </div>
   );

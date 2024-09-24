@@ -1,4 +1,4 @@
-import { FaAlignLeft } from "react-icons/fa";
+import { FaAlignLeft, FaChevronDown } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import DashboardSidebar from "./components/DashboardSidebar";
@@ -10,43 +10,67 @@ const DashboardLayout = ({ children }) => {
     <div className="relative">
       {/* Top Navbar */}
       <div className="fixed top-0 left-0 right-0 z-20 w-full bg-[#323232] shadow-md">
-        <div className="flex justify-between items-center p-2 border-b border-gray-200">
+        <div className="flex justify-between items-center p-3 lg:p-1 border-b border-gray-200">
           {/* Sidebar toggle for mobile */}
-          <h1 className="text-3xl hidden lg:block uppercase font-bold my-4 text-white">
+          <Link
+            href="/"
+            className="text-3xl hidden lg:block uppercase font-bold my-4 text-white"
+          >
             Condo Cloud
-          </h1>
+          </Link>
           <label htmlFor="my-drawer-2" className="lg:hidden">
             <FaAlignLeft className="lg:text-5xl text-4xl p-1 lg:p-2 bg-white rounded-md rotate-180 cursor-pointer font-normal" />
           </label>
 
           {/* User dropdown */}
-          <div className="relative">
+          <div className="relative flex items-center">
             <div className="dropdown dropdown-end">
-              <label tabIndex={0}>
-                <div className="avatar border border-primary rounded-full placeholder online cursor-pointer">
-                  <div className="bg-primary-focus text-primary rounded-full lg:w-14 w-10 font-semibold">
+              <label
+                tabIndex={0}
+                className="cursor-pointer flex items-center space-x-3"
+              >
+                {/* User Avatar */}
+                <div className="avatar">
+                  <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full border-2 border-green-500">
                     <Image
-                      height={100}
-                      width={100}
                       src={img}
-                      alt="User Photo"
-                      className="lg:w-14 lg:h-14 w-10 h-10 object-cover object-top rounded-full border-2 border-white bg-white p-[0.5px]"
+                      alt="User Avatar"
+                      height={48}
+                      width={48}
+                      className="rounded-full object-cover object-top"
                     />
                   </div>
                 </div>
+
+                {/* User Info */}
+                <div className="hidden lg:flex flex-col items-start">
+                  <span className="text-white font-semibold">John Doe</span>
+                  <span className="text-gray-400 text-sm">Admin</span>
+                </div>
+
+                {/* Dropdown Arrow */}
+                <FaChevronDown className="text-gray-400" />
               </label>
+
+              {/* Dropdown Menu */}
               <ul
                 tabIndex={0}
-                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 border border-primary z-50 border-opacity-30"
+                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52 border border-gray-300"
               >
-                <li className="relative font-medium before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-primary before:transition hover:before:scale-100">
-                  <Link href="/features/dashboard" className="text-md">
+                <li>
+                  <Link
+                    className="text-sm text-gray-700 hover:text-blue-500"
+                    href="/features/dashboard"
+                  >
                     Dashboard
                   </Link>
                 </li>
-                <li className="relative font-medium before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-primary before:transition hover:before:scale-100">
-                  <Link href="/login" className="text-md">
-                    Login
+                <li>
+                  <Link
+                    className="text-sm text-gray-700 hover:text-blue-500"
+                    href="/login"
+                  >
+                    Logout
                   </Link>
                 </li>
               </ul>

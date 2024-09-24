@@ -4,7 +4,7 @@ import TestimonialSlider from "./TestimonialSlider";
 
 export default function Testimonial() {
   return (
-    <div id="testimonial" className=" mx-auto  px-4 py-20 md:p-8 md:py-24">
+    <div id="testimonial" className=" container mx-auto  px-4 py-20 md:p-8 md:py-24">
       <div className=" ">
         {/* Header section */}
         <header className="flex items-center justify-center gap-10 mb-10 xl:mb-12">

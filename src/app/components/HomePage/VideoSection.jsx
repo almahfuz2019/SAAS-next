@@ -17,7 +17,7 @@ const VideoSection = () => {
   };
 
   return (
-    <div className="bg-[#F5F8FF] lg:py-24 py-20">
+    <div className="bg-[#F5F8FF] lg:pt-24 pt-20">
       <div className="container mx-auto max-w-screen-xl px-4 grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Left side: Text content */}
         <div
@@ -25,7 +25,7 @@ const VideoSection = () => {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <h2 className="font-medium mb-6 lg:mb-10 text-accent text-[32px] lg:text-[40px] leading-[40px] lg:leading-[50px] transition-transform duration-300 hover:scale-105">
+          <h2 className="font-medium mb-6 lg:mb-10 text-accent text-[32px] lg:text-[40px] leading-[40px] lg:leading-[50px]">
             A Comprehensive Support System For Every User
           </h2>
           <p className="text-[#676767] text-lg lg:text-xl mb-6">

@@ -90,8 +90,8 @@ const TestimonialSlider = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className={`keen-slider__slide flex flex-col gap-4 justify-between px-6 py-8 rounded-lg border border-[#E4E4E4] shadow-lg ${
-                currentSlide === index ? "current-slide bg-white" : ""
+              className={`keen-slider__slide flex flex-col gap-4 justify-between px-6 py-8 rounded-lg border border-[#E4E4E4]  bg-white ${
+                currentSlide === index ? "current-slide shadow-lg" : ""
               }`}
             >
               <div className="flex justify-start gap-1">

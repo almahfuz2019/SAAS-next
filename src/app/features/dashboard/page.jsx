@@ -69,7 +69,14 @@ const ChartSection = ({ title, children }) => (
   <div className="bg-white p-4 rounded w-full">
     <h3 className="text-lg font-semibold mb-4">{title}</h3>
     {children}
-    <p className="mt-2">Current Month</p>
+    <br />
+    <div className="flex justify-between items-center w-full border-t pt-2">
+      <div className="flex items-center space-x-1">
+        <BsCalendar className="text-gray-500 w-5 h-5" />
+        <span className="text-sm text-gray-500">Current Month</span>
+      </div>
+      <HiDotsHorizontal className="text-gray-500 w-5 h-5 cursor-pointer" />
+    </div>
   </div>
 );
 
@@ -132,7 +139,7 @@ const page = () => {
 
         {/* File Storage */}
         <ChartSection title="File Storage">
-          <ResponsiveContainer width={200} height={200}>
+          <ResponsiveContainer className="mx-auto" width={200} height={200}>
             <PieChart>
               <Pie
                 data={fileStorageData}
@@ -155,8 +162,10 @@ const page = () => {
               </Pie>
             </PieChart>
           </ResponsiveContainer>
-          <p className="mt-2 text-lg font-bold">0.48 GB Used</p>
-          <p className="text-gray-500">Current Plan: 1 GB</p>
+          <div className="flex justify-between items-center">
+            <p className="mt-2 text-lg font-bold">0.48 GB Used</p>
+            <p className="text-gray-500">Current Plan: 1 GB</p>
+          </div>
         </ChartSection>
       </div>
 
