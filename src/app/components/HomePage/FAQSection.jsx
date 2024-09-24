@@ -49,7 +49,7 @@ const FaqSection = () => {
                 className="collapse-title text-xl text-accent font-medium cursor-pointer flex justify-between items-center"
               >
                 What is Condo Cloud?
-                <FaChevronDown className="transition-transform duration-300" />
+              
               </label>
               <div className="collapse-content text-[#676767] border-t pt-4 text-lg md:text-xl">
                 <p>
@@ -74,7 +74,7 @@ const FaqSection = () => {
                 className="collapse-title text-xl text-accent font-medium cursor-pointer flex justify-between items-center"
               >
                 Lorem ipsum dolor sit amet, consectetur?
-                <FaChevronDown className="transition-transform duration-300" />
+              
               </label>
               <div className="collapse-content text-[#676767] border-t pt-4 text-lg md:text-xl">
                 <p>
@@ -98,7 +98,7 @@ const FaqSection = () => {
                 className="collapse-title text-xl text-accent font-medium cursor-pointer flex justify-between items-center"
               >
                 Lorem ipsum dolor sit amet, consectetur?
-                <FaChevronDown className="transition-transform duration-300" />
+              
               </label>
               <div className="collapse-content text-[#676767] border-t pt-4 text-lg md:text-xl">
                 <p>
@@ -122,7 +122,7 @@ const FaqSection = () => {
                 className="collapse-title text-xl text-accent font-medium cursor-pointer flex justify-between items-center"
               >
                 Lorem ipsum dolor sit amet, consectetur?
-                <FaChevronDown className="transition-transform duration-300" />
+              
               </label>
               <div className="collapse-content text-[#676767] border-t pt-4 text-lg md:text-xl">
                 <p>
