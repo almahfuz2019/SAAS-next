@@ -7,7 +7,7 @@ const DashboardLayout = ({ children }) => {
   const img =
     "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   return (
-    <div className="relative">
+    <div className="relative ">
       {/* Top Navbar */}
       <div className="fixed top-0 left-0 right-0 z-20 w-full bg-[#323232] shadow-md">
         <div className="flex justify-between items-center p-3 lg:p-1 border-b border-gray-200">
@@ -80,7 +80,7 @@ const DashboardLayout = ({ children }) => {
       </div>
 
       {/* Sidebar and Drawer */}
-      <div className="drawer lg:drawer-open bg-white pt-20">
+      <div className="drawer lg:drawer-open bg-white ">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
           {/* Where your main page components will be rendered */}
